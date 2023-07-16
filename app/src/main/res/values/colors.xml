@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="transparent">#00000000</color>
+
+
+    <!--color palette-->
+    <color name="purple">#D4C4E3</color>
+    <color name="darkPurple">#9387F5</color>
+    <color name="blue">#A8DAF0</color>
+    <color name="peach">#F0C390</color>
+    <color name="green">#C3F09C</color>
+    <color name="orangeRed">#F3722C</color>
+    <color name="yellowOrange">#F8961E</color>
+    <color name="MangoTango">#F9844A</color>
+    <color name="maizeCrayola">#F9C74F</color>
+    <color name="card_pink">#FF3C7F</color>
+    <color name="card_yellow">#FFEB3B</color>
+    <color name="card_red">#FF0E00</color>
+    <color name="card_violet">#FF9500</color>
+    <color name="card_blue">#5AC8FA</color>
+    <color name="card_green">#34C759</color>
+
+
+    <array name="color_picker">
+        <item>@color/white</item>
+        <item>@color/card_pink</item>
+        <item>@color/card_yellow</item>
+        <item>@color/card_red</item>
+        <item>@color/card_violet</item>
+        <item>@color/card_blue</item>
+        <item>@color/card_green</item>
+        <item>@color/peach</item>
+        <item>@color/green</item>
+        <item>@color/purple</item>
+        <item>@color/darkPurple</item>
+        <item>@color/blue</item>
+        <item>@color/orangeRed</item>
+        <item>@color/yellowOrange</item>
+        <item>@color/MangoTango</item>
+        <item>@color/maizeCrayola</item>
+    </array>
+
+
+</resources>
