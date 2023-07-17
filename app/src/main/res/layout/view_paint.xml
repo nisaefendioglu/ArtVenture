@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <com.nisaefendioglu.paintapp.PaintView
+    <com.nisaefendioglu.paintapp.view.PaintView
         android:id="@+id/paintView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -13,6 +13,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-    </com.nisaefendioglu.paintapp.PaintView>
+    </com.nisaefendioglu.paintapp.view.PaintView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

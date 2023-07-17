@@ -1,38 +1,37 @@
 package com.nisaefendioglu.paintapp
 
-import com.nisaefendioglu.paintapp.PaintView.Companion.colorList
-import com.nisaefendioglu.paintapp.PaintView.Companion.pathList
-import android.graphics.Paint
-import android.graphics.Path
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
 import androidx.cardview.widget.CardView
+import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.google.android.material.bottomsheet.BottomSheetDialog
+import com.nisaefendioglu.paintapp.adapter.SelectColorAdapter
+import com.nisaefendioglu.paintapp.data.ColorItem
+import com.nisaefendioglu.paintapp.view.PaintView
+import com.nisaefendioglu.paintapp.viewmodel.PaintViewModel
 
 class MainActivity : AppCompatActivity() {
 
     private lateinit var colorRecyclerView: RecyclerView
     private lateinit var erasePaint: CardView
     private lateinit var editFont: CardView
+    private lateinit var viewModel: PaintViewModel
+    private lateinit var paintView: PaintView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        paintView = findViewById(R.id.paintView)
         colorRecyclerView = findViewById(R.id.color_recyclerView)
         erasePaint = findViewById(R.id.erase_paint)
         editFont = findViewById(R.id.edit_font)
 
-        val colorArray = arrayListOf(
-            R.color.white, R.color.card_pink, R.color.card_yellow, R.color.card_red,
-            R.color.card_violet, R.color.card_blue, R.color.card_green, R.color.peach,
-            R.color.green, R.color.purple, R.color.darkPurple, R.color.orangeRed,
-            R.color.yellowOrange, R.color.MangoTango, R.color.maizeCrayola
-        )
+        viewModel = ViewModelProvider(this).get(PaintViewModel::class.java)
 
-        val adapter = SelectColorAdapter(colorArray, this)
+        val adapter = SelectColorAdapter(this) { colorItem -> onColorItemSelected(colorItem) }
 
         val layoutManager = LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false)
 
@@ -40,14 +39,20 @@ class MainActivity : AppCompatActivity() {
         colorRecyclerView.adapter = adapter
 
         erasePaint.setOnClickListener {
-            pathList.clear()
-            colorList.clear()
-            path.reset()
+            paintView.clearPaths()
         }
 
         editFont.setOnClickListener {
             showPaintStrokeDialog()
         }
+
+        viewModel.colorList.observe(this, { colorItems ->
+            adapter.setData(colorItems)
+        })
+    }
+
+    private fun onColorItemSelected(colorItem: ColorItem) {
+        paintView.setPaintColor(getColor(colorItem.colorResId))
     }
 
     private fun showPaintStrokeDialog() {
@@ -86,10 +91,5 @@ class MainActivity : AppCompatActivity() {
 
     private fun setPaintStroke(strokeWidth: Float) {
         PaintView.paintStroke = strokeWidth
-    }
-
-    companion object {
-        var path = Path()
-        var paintBrush = Paint()
     }
 }
