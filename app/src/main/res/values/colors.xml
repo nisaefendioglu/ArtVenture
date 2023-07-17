@@ -9,21 +9,20 @@
     <color name="white">#FFFFFFFF</color>
     <color name="transparent">#00000000</color>
 
-
     <!--color palette-->
-    <color name="purple">#D4C4E3</color>
-    <color name="darkPurple">#9387F5</color>
+    <color name="purple">#a55eea</color>
+    <color name="darkPurple">#6C5AFF</color>
     <color name="blue">#A8DAF0</color>
     <color name="peach">#F0C390</color>
-    <color name="green">#C3F09C</color>
-    <color name="orangeRed">#F3722C</color>
-    <color name="yellowOrange">#F8961E</color>
-    <color name="MangoTango">#F9844A</color>
-    <color name="maizeCrayola">#F9C74F</color>
+    <color name="green">#417A0D</color>
+    <color name="orangeRed">#EE5A24</color>
+    <color name="yellowOrange">#FF9800</color>
+    <color name="MangoTango">#006266</color>
+    <color name="maizeCrayola">#8E6400</color>
     <color name="card_pink">#FF3C7F</color>
-    <color name="card_yellow">#FFEB3B</color>
-    <color name="card_red">#FF0E00</color>
-    <color name="card_violet">#FF9500</color>
+    <color name="card_yellow">#fff200</color>
+    <color name="card_red">#EA2027</color>
+    <color name="card_violet">#FFC312</color>
     <color name="card_blue">#5AC8FA</color>
     <color name="card_green">#34C759</color>
 
