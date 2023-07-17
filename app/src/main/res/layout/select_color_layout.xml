@@ -10,8 +10,8 @@
     android:paddingBottom="5dp">
 
     <androidx.cardview.widget.CardView
-        android:layout_width="60dp"
-        android:layout_height="60dp"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
         android:layout_gravity="center"
         app:cardCornerRadius="100dp">
 
@@ -22,8 +22,5 @@
 
         </ImageView>
 
-
     </androidx.cardview.widget.CardView>
-
-
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

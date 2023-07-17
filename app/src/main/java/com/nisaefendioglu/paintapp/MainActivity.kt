@@ -1,5 +1,6 @@
 package com.nisaefendioglu.paintapp
 
+import android.graphics.Color
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.activity.viewModels
@@ -38,6 +39,10 @@ class MainActivity : AppCompatActivity() {
 
         binding.erasePaintButton.setOnClickListener {
             paintView.clearPaths()
+        }
+
+        binding.eraseButton.setOnClickListener {
+            paintView.setPaintColor(Color.WHITE)
         }
 
         viewModel.colorList.observe(this) { colorItems ->
