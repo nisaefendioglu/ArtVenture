@@ -48,7 +48,6 @@ class PaintView : View {
         when (event.action) {
             MotionEvent.ACTION_DOWN -> touchStart(x, y)
             MotionEvent.ACTION_MOVE -> touchMove(x, y)
-            MotionEvent.ACTION_UP -> touchUp()
         }
 
         return true
@@ -64,10 +63,6 @@ class PaintView : View {
     private fun touchMove(x: Float, y: Float) {
         path.lineTo(x, y)
         invalidate()
-    }
-
-    private fun touchUp() {
-        // Nothing needed for now
     }
 
     fun clearPaths() {
@@ -87,10 +82,5 @@ class PaintView : View {
 
     fun setPaintColor(color: Int) {
         currentBrush = color
-    }
-
-    fun setPaintStroke(strokeWidth: Float) {
-        paintStroke = strokeWidth
-        invalidate()
     }
 }
