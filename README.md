@@ -27,7 +27,7 @@ https://github.com/nisaefendioglu/ArtVenture/assets/48391281/a6beaf30-be80-4f1a-
 1. Clone the repository to your local machine using Git:
 
 ```
-git clone https://github.com/your-username/paint-app.git
+git clone https://github.com/nisaefendioglu/ArtVenture.git
 ```
 
 2. Open Android Studio and import the project by selecting the project's root directory.
@@ -36,10 +36,10 @@ git clone https://github.com/your-username/paint-app.git
 
 ## How to Contribute
 
-Contributions to the Paint App are welcome! If you find any issues or have feature suggestions, please submit an issue on the repository. Feel free to fork the project and create pull requests with your improvements.
+Contributions to the ArtVenture are welcome! If you find any issues or have feature suggestions, please submit an issue on the repository. Feel free to fork the project and create pull requests with your improvements.
 
 ## License
 
-The Paint App is open-source software licensed under the [MIT License](LICENSE).
+The ArtVenture is open-source software licensed under the [MIT License](LICENSE).
 
 Happy drawing! 🎨
