@@ -28,12 +28,11 @@
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
-
         <LinearLayout
             android:id="@+id/bottomBarLayout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@color/purple_200"
+            android:layout_marginBottom="8dp"
             android:gravity="center"
             android:orientation="horizontal"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -42,12 +41,13 @@
 
             <androidx.cardview.widget.CardView
                 android:id="@+id/editFontButton"
-                android:layout_width="60dp"
-                android:layout_height="60dp"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
                 android:layout_gravity="center"
                 android:layout_marginLeft="5dp"
                 android:layout_marginTop="5dp"
                 android:layout_marginBottom="5dp"
+                app:cardBackgroundColor="#FD99BB"
                 app:cardCornerRadius="100dp">
 
                 <ImageView
@@ -64,12 +64,13 @@
 
             <androidx.cardview.widget.CardView
                 android:id="@+id/eraseButton"
-                android:layout_width="60dp"
-                android:layout_height="60dp"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
                 android:layout_gravity="center"
                 android:layout_marginStart="5dp"
                 android:layout_marginTop="5dp"
                 android:layout_marginBottom="5dp"
+                app:cardBackgroundColor="#FFDAB9"
                 app:cardCornerRadius="100dp">
 
                 <ImageView
@@ -86,11 +87,12 @@
 
             <androidx.cardview.widget.CardView
                 android:id="@+id/erasePaintButton"
-                android:layout_width="60dp"
-                android:layout_height="60dp"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
                 android:layout_gravity="center"
                 android:layout_marginTop="5dp"
                 android:layout_marginBottom="5dp"
+                app:cardBackgroundColor="#8EFB92"
                 app:cardCornerRadius="100dp">
 
                 <ImageView
