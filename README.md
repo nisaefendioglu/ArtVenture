@@ -1,10 +1,10 @@
 # ArtVenture 🎨
 
-The Paint App is a simple drawing application developed in Kotlin. It follows the MVVM (Model-View-ViewModel) architecture, making it easier to manage data, user interface, and application logic.
+The ArtVenture is a simple drawing application developed in Kotlin. It follows the MVVM (Model-View-ViewModel) architecture, making it easier to manage data, user interface, and application logic.
 
 ## Demo
 
-![Ekran Alınssssstısı](https://github.com/nisaefendioglu/Paint/assets/48391281/14ef411e-c95b-4421-aa15-b9579fac9214)
+![Ekran Alınssssstısı](https://github.com/nisaefendioglu/ArtVenture/assets/48391281/f3b3620a-f767-4ed5-b897-c72f3df02e24)
 
 ## Features
 
@@ -15,7 +15,7 @@ The Paint App is a simple drawing application developed in Kotlin. It follows th
 
 ## Video
 
-https://github.com/nisaefendioglu/Paint/assets/48391281/1280b112-84ac-4d6b-9c5c-da11f3e91e8c
+https://github.com/nisaefendioglu/ArtVenture/assets/48391281/a6beaf30-be80-4f1a-8697-dec6db5b920d
 
 ## Getting Started
 
