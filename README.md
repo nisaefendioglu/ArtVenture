@@ -2,6 +2,11 @@
 
 The ArtVenture is a simple drawing application developed in Kotlin. It follows the MVVM (Model-View-ViewModel) architecture, making it easier to manage data, user interface, and application logic.
 
+## Google Play Store :
+
+[![Get it on Google Play](https://play.google.com/intl/en_us/badges/images/badge_new.png)](https://play.google.com/store/apps/details?id=com.nisaefendioglu.paintapp)
+
+
 ## Demo
 
 ![Ekran Alınssssstısı](https://github.com/nisaefendioglu/ArtVenture/assets/48391281/f3b3620a-f767-4ed5-b897-c72f3df02e24)
